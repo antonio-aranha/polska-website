@@ -1,0 +1,275 @@
+
+@import "node_modules/normalize.css/normalize.css";
+
+
+/*! `Custom` Bootstrap 4 theme */
+
+$theme-colors:("primary":red,
+"danger":lighten(red,15),
+"info":white,
+"dark":black);
+
+$front-heigth: calc(100vh - 166px);
+$half: (calc((100vh - 166px) / 2));
+$half1: (calc((100vh - 166px) / 2 - 10vh));
+
+mymarg{
+	margin-top: 10px;
+
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+  .btn {
+	   color:white;
+	   margin: 0.2em;
+	   font-size:9.4px;
+	   border-radius: 0;
+	   padding: 1vw 1vw;
+  }
+ 
+.row{
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+#logo{
+	height:14vw;
+	width: 14vw;
+	border-radius: 0;
+}
+.polska{
+	color:red;
+	font-weight: 540;
+	font-size:20vw;
+}
+.first{
+	font-size: 4vw;
+	
+	.first::first-letter {
+	color: black;
+	float: left;
+	font-size:3em;
+	margin:0;
+	padding: 0;
+	line-height:1em;
+	margin-right: 5px;
+	}
+}
+#height{
+	min-height: calc(100vh - 166px);
+}
+
+.ende{
+	font-size: 10vw;
+}
+
+.half{
+	height: $half;
+}
+
+.half1{
+	height: $half1;
+}
+.it{
+	display: none;
+}
+
+@media only screen and (min-width: 571px) {
+  /* For mobile phones: */
+    .btn {
+	    color:white;
+	    margin: 0.2em;
+	    font-size:12px;
+	    border-radius: 0;
+	    padding: 1px 1px;
+	}
+    #logo{
+	    height:80px;
+	    width: 80px;
+		border-radius: 0;
+	}
+    .polska{
+		font-size:115px;
+	}
+	.first{
+		font-size: 1.3em;
+	}
+	#pol{height: 18vh;}
+	#height{
+		min-height: calc(80vh - 56px);
+	}
+	.ende{
+		font-size: 3em;
+	}
+	
+    .half1{
+		height: 18vw;
+	}
+	.half{
+		height: auto;
+	}
+	.it{
+		display: block;
+	}
+
+}
+
+
+h1{
+	font-size:3em;
+	font-family: Helvetica;
+}
+
+
+
+
+a{  color:black;
+	font-weight: 400;
+ }
+
+a:hover, a:active{
+	color: red;
+	text-decoration: none;
+}
+
+.navbar-dark .navbar-toggler{
+	color: red !important;
+	border-color: white !important;
+	outline-color:  white !important;
+}
+
+.nav-link{  color:white !important;
+	font-weight: 700;
+ }
+
+.nav-link:hover, .nav-link:active{
+	color: red !important;
+	text-decoration: none;
+}
+
+ul.nav a:hover { color: rgb(255, 0, 0) !important; }
+
+
+table {
+  border-collapse: collapse;
+  color: black;
+}
+
+td,
+th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.lastone {
+  border-bottom: 0 solid black;
+}
+
+.menu {
+  overflow-x: auto;
+  height: 90vh;
+}
+
+td {
+  font-size: 13px;
+}
+
+th {
+  padding-top: 20px;
+}
+
+#esp{
+	height: 100px;
+	margin: 2*0.2em;
+}
+
+#a3{
+	position: absolute;
+    top: -105px;
+    height: 17px;
+    width: 100%;
+}
+
+#menu {width: 100%;}
+
+#haha{background-image: url(images/flores.jpg);
+	background-size: cover;
+	overflow: hidden;
+	height: 20vh;
+	
+}
+
+#flor{
+	height:200;
+}
+
+#eu{
+	background: black;
+	color: white;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.sticky + div{
+	margin-top: 56px;
+}
+
+#logo2{
+	height: 30px;
+}
+
+bodyy {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+  }
+
+
+.tela{
+	min-height: 100vh;
+}
+
+
+.filler{
+	height: 56px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2; }
+
+h2{
+	font-size: 3em;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0; }
